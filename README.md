@@ -12,4 +12,4 @@ A working encyclopedia like Wikipedia
 - | 06 |Create new page feature for user of encyclopedia | 28-5-2023 |___________|  Incomplete |
 - | 07 |Edit page feature for user of encyclopedia       | 28-5-2023 |___________|  Incomplete |
 - | 08 |Clicking "random page" takes user to random page | 28-5-2023 |___________|  Incomplete |
-- | 09 |Markdown HTML conversion                         | 28-5-2023 |___________|  Incomplete |
+- | 09 |Markdown HTML conversion                         | 28-5-2023 | 28-5-2023 |  Complete   |
