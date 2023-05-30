@@ -11,5 +11,5 @@ A working encyclopedia like Wikipedia
 - | 05 |Non-existing search results in substring results | 28-5-2023 |___________|  Incomplete |
 - | 06 |Create new page feature for user of encyclopedia | 28-5-2023 |___________|  Incomplete |
 - | 07 |Edit page feature for user of encyclopedia       | 28-5-2023 |___________|  Incomplete |
-- | 08 |Clicking "random page" takes user to random page | 28-5-2023 |___________|  Incomplete |
+- | 08 |Clicking "random page" takes user to random page | 28-5-2023 | 30-5-2023 |  Complete   |
 - | 09 |Markdown HTML conversion                         | 28-5-2023 | 29-5-2023 |  Complete   |
