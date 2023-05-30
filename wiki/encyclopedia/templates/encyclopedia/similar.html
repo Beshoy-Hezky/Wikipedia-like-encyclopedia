@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Similar Entries
+{% endblock %}
+
+{% block body %}
+    {% if size == 0 %}
+    <h1>No similar entries exist</h1>
+
+    {% else %}
+    <h1>Similar Entries</h1>
+
+    <ul>
+        {% for similar_entry in similar_entries %}
+            <li><a href="{% url 'content' topic=similar_entry %}">{{ similar_entry }}</a></li>
+        {% endfor %}
+    </ul>
+
+    {% endif %}
+{% endblock %}
