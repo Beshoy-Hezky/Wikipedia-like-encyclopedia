@@ -1,15 +1,13 @@
 import markdown2
 from django.shortcuts import render
 from . import util
+import random
 
 
 def converter(topic):
     words = util.get_entry(topic)
     converter_obj = markdown2.Markdown()
-    if words == None:
-        return None
-    else:
-        return converter_obj.convert(words)
+    return converter_obj.convert(words)
 
 
 def index(request):
@@ -29,4 +27,12 @@ def content(request, topic):
         return render(request, "encyclopedia/content.html",{
             "topic": topic, "content": converter(topic)
         })
+
+
+def random_page(request):
+    topic_chosen = random.choice(util.list_entries())
+    return render(request, "encyclopedia/content.html", {
+        "topic": topic_chosen, "content": converter(topic_chosen)
+    })
+
 
