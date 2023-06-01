@@ -75,3 +75,25 @@ def new_page(request):
                           })
 
 
+def edit_page(request):
+    if request.method == "POST":
+        topic = request.POST['topic_scraped']
+        content = util.get_entry(topic)
+        return render(request, "encyclopedia/editPage.html", {
+            "topic": topic, "content": content
+        })
+
+
+def submit_edit(request):
+    if request.method == "POST":
+        topic = request.POST['topic']
+        content = request.POST['content_input']
+        # one-liner I found online to resolve issue I was finding with extra lines
+        content = "".join([s for s in content.splitlines(True) if s.strip("\r\n")])
+        print(content.splitlines())
+        util.save_entry(topic,content)
+        return render(request, "encyclopedia/content.html", {
+            "topic": topic, "content": converter(topic)
+        })
+
+
