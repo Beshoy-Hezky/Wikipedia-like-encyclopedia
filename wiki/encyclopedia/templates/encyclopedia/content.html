@@ -8,6 +8,10 @@
 {% block body %}
     {{ content | safe}}
 
-    <button type="button" class="btn btn-outline-warning">Edit Page</button>
+    <form action="{% url 'edit_page' %}" method="POST" >
+    {% csrf_token %}
+        <input type="hidden" name="topic_scraped" value="{{ topic }}">
+        <input type="submit" value="Edit Page" class="btn btn-outline-warning">
+    </form>
 
 {% endblock %}
