@@ -10,6 +10,6 @@ A working encyclopedia like Wikipedia
 - | 04 |User can search for entry and be redirected      | 28-5-2023 | 30-5-2023 |  Complete   |
 - | 05 |Non-existing search results in substring results | 28-5-2023 | 30-5-2023 |  Complete   |
 - | 06 |Create new page feature for user of encyclopedia | 28-5-2023 |  1-6-2023 |  Complete   |
-- | 07 |Edit page feature for user of encyclopedia       | 28-5-2023 |___________|  Incomplete |
+- | 07 |Edit page feature for user of encyclopedia       | 28-5-2023 |  1-6-2023 |  Complete   |
 - | 08 |Clicking "random page" takes user to random page | 28-5-2023 | 30-5-2023 |  Complete   |
 - | 09 |Markdown HTML conversion                         | 28-5-2023 | 29-5-2023 |  Complete   |
