@@ -2,7 +2,6 @@ import markdown2
 from django.shortcuts import render
 from . import util
 import random
-from django import forms
 
 
 def converter(topic):
@@ -53,3 +52,26 @@ def search_box(request):
             "similar_entries": similar_entries,
             "size": len(similar_entries)
         })
+
+
+def new_page(request):
+    if request.method == "GET":
+        return render(request, "encyclopedia/createPage.html", {
+            "error": False
+        })
+    else:
+        topic = request.POST['topic_input']
+        # if entry already exists
+        if util.get_entry(topic) != None:
+            #render same page with an alert
+            return render(request, "encyclopedia/createPage.html", {
+                "error": True
+            })
+        else:
+            content = request.POST['content_input']
+            util.save_entry(topic,content)
+            return render(request, "encyclopedia/content.html", {
+                "topic": topic, "content": converter(topic)
+                          })
+
+
