@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ Edit }}
+
+{% endblock %}
+
+{% block body %}
+    <h1>{{ topic }}</h1>
+
+    <form action="{% url 'submit_edit' %}" method="post">
+    {% csrf_token %}
+        <input type="hidden" name="topic" value="{{ topic }}">
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Content: (Insert in Markdown markup language only)</label>
+    <textarea name="content_input" class=" form-control" id="exampleFormControlTextarea1" style="width:1030px; height: 200px;">{{ content }}</textarea>
+  </div>
+        <button type="submit" class="btn btn-primary">Submit Edit</button>
+</form>
+
+{% endblock %}
