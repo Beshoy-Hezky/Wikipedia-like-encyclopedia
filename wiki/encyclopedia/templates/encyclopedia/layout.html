@@ -11,7 +11,7 @@
     <body>
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
-                <h2>Wiki</h2>
+                <h2 class="display-4" style="text-decoration-line: underline;text-decoration-thickness: 2px;">Wiki</h2>
                 <form action="{% url 'search_box' %}" method="post">
                     {% csrf_token %}
                     <input class="search" type="text" name="q" placeholder="Search Encyclopedia">

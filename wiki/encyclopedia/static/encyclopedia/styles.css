@@ -36,3 +36,13 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+h1, h2, h3, h4, h5, h6{
+   font-size: 3rem;
+  font-weight: 250;
+  line-height: 1.2;
+}
+
+.underline {
+  border-bottom: 5px solid black;
+}
