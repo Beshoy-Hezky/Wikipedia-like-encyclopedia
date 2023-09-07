@@ -1,6 +1,10 @@
 # Wikipedia-like-encyclopedia
 A working encyclopedia like Wikipedia
 
+[Click here to see video](https://youtu.be/BNrCkITULhM?si=_FdGOw9kK41bybLf)
+
+[Click here to see webapp](http://beshoyhezky4.pythonanywhere.com/)
+
 ### Product Backlog
 
 - | Id | Feature title                                   | Start     |    End    |   Status    |
